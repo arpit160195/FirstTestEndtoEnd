@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,8 +16,10 @@ public class Configuration {
 	
 	public WebDriver driver;
 	public Properties prop;
+	public static Logger log;
 	
 	public WebDriver browserInitialize() throws IOException {
+		log = LogManager.getLogger(this.getClass().getName());
 		prop = getProperties();
 		String browser = prop.getProperty("Browser");
 		if(browser.toUpperCase().equals("CHROME")) {

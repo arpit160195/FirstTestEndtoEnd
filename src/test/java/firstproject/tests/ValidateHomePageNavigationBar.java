@@ -17,18 +17,22 @@ public class ValidateHomePageNavigationBar extends Configuration {
 	@BeforeTest
 	public void beforeTest() throws IOException {
 		driver = browserInitialize();
+		log.info("Browser is initialised");
 		driver.get(prop.getProperty("HomeURL"));
+		log.info("Navigated to Home Page");
 	}
 	
 	@Test
 	public void validateTitle() {		
 		HomePage home = new HomePage(driver);
 		Assert.assertTrue(home.homeNavBar().isDisplayed());
+		log.info("Checked navigation bar");
 	}
 	
 	@AfterTest
 	public void afterTest() {
 		driver.close();
+		log.info("Browser is closed");
 	}
 	
 }
