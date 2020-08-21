@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="28141" started-at="2020-08-21T16:17:04Z" finished-at="2020-08-21T16:17:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="28141" started-at="2020-08-21T16:17:04Z" finished-at="2020-08-21T16:17:32Z">
+      <class name="firstproject.tests.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:firstproject.tests.LoginTest@224edc67]" name="beforeTest" is-config="true" duration-ms="5269" started-at="2020-08-21T21:47:04Z" finished-at="2020-08-21T21:47:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="homePage(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@224edc67]" name="homePage" duration-ms="6010" started-at="2020-08-21T21:47:10Z" data-provider="getData" finished-at="2020-08-21T21:47:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonrestricteduser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="homePage(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@224edc67]" name="homePage" duration-ms="3104" started-at="2020-08-21T21:47:16Z" data-provider="getData" finished-at="2020-08-21T21:47:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Restricteduser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="homePage(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@224edc67]" name="homePage" duration-ms="2738" started-at="2020-08-21T21:47:19Z" data-provider="getData" finished-at="2020-08-21T21:47:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Neutraluser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="homePage(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@224edc67]" name="homePage" duration-ms="2849" started-at="2020-08-21T21:47:22Z" data-provider="getData" finished-at="2020-08-21T21:47:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Guestuser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd012]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="homePage(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@224edc67]" name="homePage" duration-ms="3341" started-at="2020-08-21T21:47:25Z" data-provider="getData" finished-at="2020-08-21T21:47:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adminuser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="homePage(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@224edc67]" name="homePage" duration-ms="3641" started-at="2020-08-21T21:47:28Z" data-provider="getData" finished-at="2020-08-21T21:47:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alumniuser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePage -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:firstproject.tests.LoginTest@224edc67]" name="afterTest" is-config="true" duration-ms="247" started-at="2020-08-21T21:47:32Z" finished-at="2020-08-21T21:47:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- firstproject.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
