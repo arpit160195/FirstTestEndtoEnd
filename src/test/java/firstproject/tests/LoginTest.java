@@ -10,13 +10,14 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import firstproject.config.Configuration;
+import firstproject.config.GlobalFunctionLibrary;
 import firstproject.pages.HomePage;
 import firstproject.pages.LoginPage;
-import fistproject.config.Configuration;
-import fistproject.config.GlobalFunctionLibrary;
 
 public class LoginTest extends Configuration {
-
+	public WebDriver driver;
+	
 	@BeforeTest
 	public void beforeTest() throws IOException {
 		driver = browserInitialize();
@@ -24,7 +25,7 @@ public class LoginTest extends Configuration {
 	}
 
 	@Test(dataProvider = "getData")
-	public void homePage(String emailId, String pwd) throws IOException {
+	public void loginTest(String emailId, String pwd) throws IOException {
 		driver.get(prop.getProperty("HomeURL"));
 		log.info("Navigated to Home Page");
 		HomePage home = new HomePage(driver);

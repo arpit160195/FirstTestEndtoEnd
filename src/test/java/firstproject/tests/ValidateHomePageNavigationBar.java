@@ -8,8 +8,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import firstproject.config.Configuration;
 import firstproject.pages.HomePage;
-import fistproject.config.Configuration;
 
 public class ValidateHomePageNavigationBar extends Configuration {
 	public WebDriver driver;
@@ -23,7 +23,7 @@ public class ValidateHomePageNavigationBar extends Configuration {
 	}
 	
 	@Test
-	public void validateTitle() {		
+	public void validateHomePageNavigationBar() {		
 		HomePage home = new HomePage(driver);
 		Assert.assertTrue(home.homeNavBar().isDisplayed());
 		log.info("Checked navigation bar");

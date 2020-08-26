@@ -1,4 +1,4 @@
-package fistproject.config;
+package firstproject.config;
 
 import java.io.FileInputStream;
 import java.io.IOException;

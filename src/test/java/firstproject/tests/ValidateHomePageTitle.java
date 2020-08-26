@@ -8,8 +8,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import firstproject.config.Configuration;
 import firstproject.pages.HomePage;
-import fistproject.config.Configuration;
 
 public class ValidateHomePageTitle extends Configuration {
 	public WebDriver driver;
@@ -23,7 +23,7 @@ public class ValidateHomePageTitle extends Configuration {
 	}
 	
 	@Test
-	public void validateTitle() {
+	public void validateHomePageTitle() {
 		HomePage home = new HomePage(driver);
 		Assert.assertEquals(home.homeTitle().getText(), "FEATURED COURSES");
 		log.info("Checked title on the page");

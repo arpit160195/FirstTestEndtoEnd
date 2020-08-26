@@ -1,25 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13206" started-at="2020-08-21T19:31:56Z" finished-at="2020-08-21T19:32:09Z">
+  <suite name="Suite" duration-ms="53220" started-at="2020-08-25T08:11:49Z" finished-at="2020-08-25T08:12:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13206" started-at="2020-08-21T19:31:56Z" finished-at="2020-08-21T19:32:09Z">
+    <test name="ValidateHomePageTitle" duration-ms="13523" started-at="2020-08-25T08:11:49Z" finished-at="2020-08-25T08:12:03Z">
       <class name="firstproject.tests.ValidateHomePageTitle">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:firstproject.tests.ValidateHomePageTitle@4b2bac3f]" name="beforeTest" is-config="true" duration-ms="12029" started-at="2020-08-22T01:01:56Z" finished-at="2020-08-22T01:02:08Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:firstproject.tests.ValidateHomePageTitle@75c072cb]" name="beforeTest" is-config="true" duration-ms="12562" started-at="2020-08-25T13:41:49Z" finished-at="2020-08-25T13:42:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="validateTitle()[pri:0, instance:firstproject.tests.ValidateHomePageTitle@4b2bac3f]" name="validateTitle" duration-ms="86" started-at="2020-08-22T01:02:08Z" finished-at="2020-08-22T01:02:08Z">
+        <test-method status="PASS" signature="validateHomePageTitle()[pri:0, instance:firstproject.tests.ValidateHomePageTitle@75c072cb]" name="validateHomePageTitle" duration-ms="82" started-at="2020-08-25T13:42:02Z" finished-at="2020-08-25T13:42:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateTitle -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:firstproject.tests.ValidateHomePageTitle@4b2bac3f]" name="afterTest" is-config="true" duration-ms="1033" started-at="2020-08-22T01:02:08Z" finished-at="2020-08-22T01:02:09Z">
+        </test-method> <!-- validateHomePageTitle -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:firstproject.tests.ValidateHomePageTitle@75c072cb]" name="afterTest" is-config="true" duration-ms="258" started-at="2020-08-25T13:42:02Z" finished-at="2020-08-25T13:42:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- firstproject.tests.ValidateHomePageTitle -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- ValidateHomePageTitle -->
+    <test name="ValidateHomePageNavigationBar" duration-ms="10226" started-at="2020-08-25T08:12:03Z" finished-at="2020-08-25T08:12:14Z">
+      <class name="firstproject.tests.ValidateHomePageNavigationBar">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:firstproject.tests.ValidateHomePageNavigationBar@358c99f5]" name="beforeTest" is-config="true" duration-ms="9203" started-at="2020-08-25T13:42:03Z" finished-at="2020-08-25T13:42:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="validateHomePageNavigationBar()[pri:0, instance:firstproject.tests.ValidateHomePageNavigationBar@358c99f5]" name="validateHomePageNavigationBar" duration-ms="118" started-at="2020-08-25T13:42:13Z" finished-at="2020-08-25T13:42:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomePageNavigationBar -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:firstproject.tests.ValidateHomePageNavigationBar@358c99f5]" name="afterTest" is-config="true" duration-ms="450" started-at="2020-08-25T13:42:13Z" finished-at="2020-08-25T13:42:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- firstproject.tests.ValidateHomePageNavigationBar -->
+    </test> <!-- ValidateHomePageNavigationBar -->
+    <test name="LoginTest" duration-ms="28717" started-at="2020-08-25T08:12:14Z" finished-at="2020-08-25T08:12:42Z">
+      <class name="firstproject.tests.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:firstproject.tests.LoginTest@258e2e41]" name="beforeTest" is-config="true" duration-ms="3835" started-at="2020-08-25T13:42:14Z" finished-at="2020-08-25T13:42:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@258e2e41]" name="loginTest" duration-ms="6402" started-at="2020-08-25T13:42:18Z" data-provider="getData" finished-at="2020-08-25T13:42:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nonrestricteduser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@258e2e41]" name="loginTest" duration-ms="3252" started-at="2020-08-25T13:42:25Z" data-provider="getData" finished-at="2020-08-25T13:42:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Restricteduser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@258e2e41]" name="loginTest" duration-ms="3084" started-at="2020-08-25T13:42:29Z" data-provider="getData" finished-at="2020-08-25T13:42:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Neutraluser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd789]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@258e2e41]" name="loginTest" duration-ms="2889" started-at="2020-08-25T13:42:32Z" data-provider="getData" finished-at="2020-08-25T13:42:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Guestuser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd012]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@258e2e41]" name="loginTest" duration-ms="3027" started-at="2020-08-25T13:42:35Z" data-provider="getData" finished-at="2020-08-25T13:42:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Adminuser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="loginTest(java.lang.String, java.lang.String)[pri:0, instance:firstproject.tests.LoginTest@258e2e41]" name="loginTest" duration-ms="2867" started-at="2020-08-25T13:42:39Z" data-provider="getData" finished-at="2020-08-25T13:42:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alumniuser@abc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd678]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:firstproject.tests.LoginTest@258e2e41]" name="afterTest" is-config="true" duration-ms="270" started-at="2020-08-25T13:42:42Z" finished-at="2020-08-25T13:42:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- firstproject.tests.LoginTest -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- Suite -->
 </testng-results>

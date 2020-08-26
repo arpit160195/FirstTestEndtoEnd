@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="firstproject.config.Listeners"/>
+  </listeners>
+  <test name="ValidateHomePageTitle(failed)" parallel="tests">
     <classes>
-      <class name="firstproject.tests.LoginTest">
+      <class name="firstproject.tests.ValidateHomePageTitle">
         <methods>
-          <include name="afterTest"/>
-          <include name="homePage" invocation-numbers="1 2 3 4 5"/>
+          <include name="validateTitle"/>
           <include name="beforeTest"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- firstproject.tests.LoginTest -->
+      </class> <!-- firstproject.tests.ValidateHomePageTitle -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- ValidateHomePageTitle(failed) -->
 </suite> <!-- Failed suite [Suite] -->
