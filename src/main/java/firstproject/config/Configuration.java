@@ -13,6 +13,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -29,8 +30,14 @@ public class Configuration {
 	public WebDriver browserInitialize() throws IOException {
 		log = LogManager.getLogger(this.getClass().getName());
 		prop = getProperties();
-		String browser = prop.getProperty("Browser");
-		if(browser.toUpperCase().equals("CHROME")) {
+//		String browser = prop.getProperty("Browser");
+		String browser = System.getProperty("Browser");
+		if(browser.toUpperCase().equals("CHROMEHEADLESS")) {
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless");
+			driver = new ChromeDriver(options);
+		}if(browser.toUpperCase().equals("CHROME")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}else if(browser.toUpperCase().equals("FIREFOX")) {
